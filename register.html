@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration&Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1 style="font-weight: 900;">REGISTRATION</h1>
+            <div class="form">
+                <form class="form-con">
+                <div>
+                  <label>Firstname</label>
+                  <input type="text" name="firstname" placeholder="firstname">
+                  <label>Lastname</label>
+                  <input type="text" name="lastname" placeholder="lastname">
+                  <label>Age</label>
+                  <input type="number" name="age" placeholder="age">
+                  <label>Email</label>
+                  <input type="email" name="email" placeholder="email">
+                  <label>Password</label>
+                  <input type="password" name="password" placeholder="password">
+           
+                 <!-- <label>Date of birth</label>
+                  <input type="date" name="dob" placeholder="date of birth">
+                  <label>Place of birth</label>
+                  <select name="province" placeholder="place of birth">
+                    <option value="">Vientiane</option>
+                    <option value="">Champasak</option>
+                    <option value="">Savanakhed</option>
+                    <option value="">Luangprabang</option>
+                    <option value="">Pakse</option>
+                    -->
+                  <span>Gender</span>
+                  <input type="radio" name="gender">Male
+                  <input type="radio" name="gender">Female
+                  <input type="radio" name="gender">No specifield
+                <br>
+                  <span>Interest</span>
+                  <input type="checkbox" name="interest">Sport
+                  <input type="checkbox" name="interest">Game
+                  <input type="checkbox" name="interest">Sex
+                  <input type="checkbox" name="interest">Music
+                 <br>
+                  <textarea style="border-radius: 10px; border: 5px solid ; ;" name="description" rows="5" cols="50"  placeholder="describe your self"></textarea>
+                  <button onclick="submitData()" class="button">Send data</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="register.js"></script>
+
+  </body>
+</html>
